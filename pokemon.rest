@@ -1,5 +1,5 @@
 ###
-GET https://pokedex-zaidoh.herokuapp.com/api/v2/pokemon HTTP/1.1
+GET https://177.22.40.122:3002/api/v2/pokemon HTTP/1.1
 
 ###
 GET http://localhost:3000/api/v2/pokemon/caterpie HTTP/1.1

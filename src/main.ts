@@ -4,7 +4,6 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-
   app.setGlobalPrefix('api/v2');
 
   app.useGlobalPipes(
@@ -17,7 +16,7 @@ async function bootstrap() {
       },
     }),
   );
-  await app.listen(process.env.PORT);
+  await app.listen(process.env.PORT || '0.0.0.0' );
   console.log(`Running on port ${process.env.PORT }`);
 }
 bootstrap();
