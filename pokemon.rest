@@ -1,12 +1,12 @@
 ###
-GET https://177.22.40.122:3002/api/v2/pokemon HTTP/1.1
+GET https://pokedex-zaidoh.herokuapp.com/api/v2/pokemon HTTP/1.1
 
 ###
-GET http://localhost:3000/api/v2/pokemon/caterpie HTTP/1.1
+GET http://localhost:3000/api/v2/pokemon/ HTTP/1.1
 
 
 ###
-POST  http://localhost:3000/api/v2/pokemon/ HTTP/1.1
+POST  http://localhost:3002/api/v2/pokemon/ HTTP/1.1
 Content-Type: application/json
 
 {
@@ -15,17 +15,17 @@ Content-Type: application/json
 }
 
 ####
-PATCH http://localhost:3000/api/v2/pokemon/632f7a54ae38edb6c6898ab0 HTTP/1.1
+PATCH http://localhost:3002/api/v2/pokemon/6351cc7cfaba91c077571cb5 HTTP/1.1
 Content-Type: application/json
 
 {
-    "no": 1
+     "name": "bulbasaur2"
 }
 
 ####
 DELETE  http://localhost:3000/api/v2/pokemon/633ce250c332b7ccde3b20a0 HTTP/1.1
 
 ####
-GET http://localhost:3002/api/v2/seed  HTTP/1.1
+GET http://localhost:3000/api/v2/seed  HTTP/1.1
 
 ####
